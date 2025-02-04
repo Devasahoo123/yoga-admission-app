@@ -2,7 +2,7 @@ services:
   backend:
     build: ./backend
     ports:
-      - "5000:5000"
+      - "5001:5001"
     environment:
       - DB_HOST=mysql
       - DB_USER=root
@@ -18,4 +18,4 @@ services:
       MYSQL_ROOT_PASSWORD: Sahoo@2003
       MYSQL_DATABASE: yoga
     ports:
-      - "3307:3306"  # Change the host port to 3307
+      - "3306:3306"  # Change the host port to 3307

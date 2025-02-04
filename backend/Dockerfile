@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # Expose port 5000 (same as in docker-compose.yml)
-EXPOSE 5000
+EXPOSE 5001
 
 # Run the server
 CMD ["node", "server.js"]
