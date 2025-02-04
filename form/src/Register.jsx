@@ -25,7 +25,7 @@ function Register() {
         e.preventDefault();
         try {
             const response = await axios.post('http://localhost:5000/register', formData);
-            toast.success(`✅ Payment Successful! Transaction ID: ${response.data.transactionId}`, {
+            toast.success(`Payment Successful! Transaction`, {
                 position: 'top-right',
                 autoClose: 2000,
             });
@@ -60,7 +60,7 @@ function Register() {
                     <option value="5-6PM">5-6PM</option>
                 </select>
 
-                <input type="month" name="month" onChange={handleChange} className="w-full p-2 border mb-2 cursor-pointer" required />
+                <input type="month" name="month" placeholder="Month" onChange={handleChange} className="w-full p-2 border mb-2 cursor-pointer" required />
 
                 <button type="submit" className="w-full bg-blue-500 text-white p-2">Register</button>
             </form>
