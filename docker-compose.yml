@@ -3,19 +3,5 @@ services:
     build: ./backend
     ports:
       - "5001:5001"
-    environment:
-      - DB_HOST=sql12.freesqldatabase.com
-      - DB_USER=sql12761251
-      - DB_PASS=d6zHbn22nu
-      - DB_NAME=sql12761251
-    depends_on:
-      - mysql
-
-  mysql:
-    image: mysql:8.0
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: d6zHbn22nu
-      MYSQL_DATABASE: sql12761251
-    ports:
-      - "3306:3306"  # Change the host port to 3307
+    env_file:
+      - .env
