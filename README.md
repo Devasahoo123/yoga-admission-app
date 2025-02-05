@@ -25,9 +25,6 @@ A participant can make multiple payments (one for each month), so we associate t
 ER Diagram Representation
 Here’s a simple textual representation of the ER diagram:
 
-lua
-Copy
-Edit
   +------------------+             +------------------+
   |   Participant    |             |      Payment     |
   +------------------+             +------------------+
